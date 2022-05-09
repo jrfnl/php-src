@@ -28,7 +28,7 @@ class B extends A {
         echo "Test is_callable() -- should not be silent\n";
         var_dump(is_callable("self::foo"));
 
-        echo "Test callable type hint -- should be silent\n";
+        echo "Test callable type hint -- should be not silent\n";
         $this->callableTypeHint("self::foo");
     }
 
@@ -68,4 +68,6 @@ Test is_callable() -- should not be silent
 
 Deprecated: Use of "self" in callables is deprecated in %s on line %d
 bool(true)
-Test callable type hint -- should be silent
+
+Deprecated: Use of "self" in callables is deprecated in %s on line %d
+Test callable type hint -- should be not silent
