@@ -1045,6 +1045,7 @@ static zend_always_inline bool zend_check_type_slow(
 	}
 
 	type_mask = ZEND_TYPE_FULL_MASK(*type);
+	/* I have a suspicion this is where the callable type check is done ? */
 	if ((type_mask & MAY_BE_CALLABLE) && zend_is_callable(arg, 0, NULL)) {
 		return 1;
 	}
