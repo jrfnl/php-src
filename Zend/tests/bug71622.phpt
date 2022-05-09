@@ -25,6 +25,7 @@ class Abc {
 Abc::run();
 
 ?>
---EXPECT--
+--EXPECTF--
+Deprecated: Use of "self" in callables is deprecated in %s on line %d
 bool(true)
 success

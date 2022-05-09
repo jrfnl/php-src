@@ -25,7 +25,7 @@ class B extends A {
         echo "Test array_map()\n";
         array_map("self::foo", [1]);
 
-        echo "Test is_callable() -- should be silent\n";
+        echo "Test is_callable() -- should not be silent\n";
         var_dump(is_callable("self::foo"));
 
         echo "Test callable type hint -- should be silent\n";
@@ -64,6 +64,8 @@ Deprecated: Callables of the form ["B", "A::foo"] are deprecated in %s on line %
 Test array_map()
 
 Deprecated: Use of "self" in callables is deprecated in %s on line %d
-Test is_callable() -- should be silent
+Test is_callable() -- should not be silent
+
+Deprecated: Use of "self" in callables is deprecated in %s on line %d
 bool(true)
 Test callable type hint -- should be silent

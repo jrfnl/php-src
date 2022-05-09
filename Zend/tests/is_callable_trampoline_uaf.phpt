@@ -23,5 +23,6 @@ $a = new A();
 X::foo($a->bar('foo'));
 
 ?>
---EXPECT--
+--EXPECTF--
+Deprecated: Use of "parent" in callables is deprecated in %s on line %d
 bool(false)

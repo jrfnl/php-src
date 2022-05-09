@@ -15,5 +15,6 @@ $foo = [new B, 'A::foo'];
 var_dump(is_callable($foo));
 
 ?>
---EXPECT--
+--EXPECTF--
+Deprecated: Callables of the form ["B", "A::foo"] are deprecated in %s on line %d
 bool(false)

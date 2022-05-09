@@ -19,6 +19,9 @@ $child->testIsCallable();
 $child->testIsCallable2();
 
 ?>
---EXPECT--
+--EXPECTF--
+Deprecated: Callables of the form [$this, "parent::testIsCallable"] are deprecated in %s on line %d
 bool(false)
+
+Deprecated: Callables of the form [$this, "static::testIsCallable2"] are deprecated in %s on line %d
 bool(true)

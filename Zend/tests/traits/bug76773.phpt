@@ -28,6 +28,8 @@ class ChildClass extends ParentClass
 $c = new ChildClass();
 $c->hello();
 ?>
---EXPECT--
+--EXPECTF--
 ChildClass
+
+Deprecated: Use of "parent" in callables is deprecated in %s on line %d
 ParentClass
